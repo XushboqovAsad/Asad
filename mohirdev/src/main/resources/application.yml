@@ -1,0 +1,35 @@
+server:
+  port: 8082
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            client-id: 813ae9f4b5905bfc5ee5
+            client-secret: 1127ea38eb32af325fb82797abaada00119c7d13
+          google:
+            clientId: 733637001142-uab9d0r6j6scabjgcfll6cur68olv81b.apps.googleusercontent.com
+            clientSecret: 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
+  datasource:
+    url: jdbc:postgresql://localhost:5432/mohirdev_oauth
+    username: mohirdev_oauth
+    password: 12345
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: xushboqovasad6@gmail.com
+    password: n s o k n i t c g p s x f n p f
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
